@@ -27,11 +27,12 @@ from contextlib import asynccontextmanager
 app = FastAPI()
 
 # ข้อมูล token และ channel secret สำหรับ LINE
-ACCESS_TOKEN = os.getenv("LINE_ACCESS_TOKEN", "O0Vi8xE7Wh3A6BahSUC6O0VKR7RxR0p27jHBl1h39OdH9/d3cEtmrS4QT91BUEDmmrRqLrUiKLVxlJcggXWQ/MwNBJttPBjKEw8Oifg9O06on+Ab3UzbvQ7E8W56z5GeOIHvROzUsRVagavLPiTIbwdB04t89/1O/w1cDnyilFU=")
-CHANNEL_SECRET = os.getenv("LINE_CHANNEL_SECRET", "701c99f9fa1b4d0261e6f4dedcce76c8")
+ACCESS_TOKEN = os.getenv("LINE_ACCESS_TOKEN", "63NAC8Ra2oOHGJfcWSF8190utp+6UAwsvMbnFLT7mFh0MPRRxj28jB0MshDgLNamzjWqEBj0ly2zu4qUaotVouVuJbBhQeAI1z+AfJ4r6JKw2U8spZ+TYh6C2lyyNZ5Wo/BGJa6+jnaGVpRUCXXwZAdB04t89/1O/w1cDnyilFU=
+")
+CHANNEL_SECRET = os.getenv("LINE_CHANNEL_SECRET", "35b7809512e19c9c717be8cfb2c73ee5")
 
 # ข้อมูล Gemini api key
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "AIzaSyBrn9N8g0RnZrYhW-vFe3Tb2ytibKcsU3E")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "AIzaSyC6V3i9c0eS-wtJW5tVsOtzS-h9l9cYo7Q")
 
 # การเชื่อมต่อ และตั้งค่าข้อมูลเพื่อเรียกใช้งาน LINE Messaging API
 configuration = Configuration(access_token=ACCESS_TOKEN)
